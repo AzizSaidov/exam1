@@ -62,7 +62,7 @@
 
 * канал
 * owner
-* пустая статистика ############
+* пустая статистика
 
 ---
 
@@ -92,8 +92,8 @@
 Удаляет канал
 Возвращает:
 
-* status  ############
-* deleted channel id  ############
+* status
+* deleted channel id
 
 ---
 
@@ -102,8 +102,8 @@
 Возвращает:
 
 * видео канала
-* сортировка: latest / popular  ############
-* фильтр по date range  ############
+* сортировка: latest / popular
+* фильтр по date range
 
 ---
 
@@ -129,7 +129,7 @@
 * список видео
 * channel nested 
 * pagination 
-* search + filter + ordering ############
+* search + filter + ordering
 
 ---
 
@@ -139,8 +139,8 @@
 Возвращает:
 
 * видео
-* автоматически views = 0 ############
-* channel info ############
+* автоматически views = 0 
+* channel info 
 
 ---
 
@@ -152,7 +152,7 @@
 * channel
 * comments_count
 * likes_count
-* views++ (side effect) ########
+* views++ (side effect)
 
 ---
 
@@ -168,9 +168,6 @@
 
 
 
-################################################
-
-
 
 ### 15. PUT /videos/{id}
 
@@ -178,7 +175,7 @@
 Возвращает:
 
 * updated object
-* diff changes (old vs new)
+* diff changes (old vs new) ##################
 
 ---
 
@@ -270,20 +267,20 @@
 
 * список пользователей
 * total count
-* is_liked_by_current_user (fake user_id)
+* is_liked_by_current_user (fake user_id) ##################
 
 ---
 
 ---
 
-## 🔍 SEARCH / FILTER
+## 🔍 SEARCH / FILTER 
 
 ### 24. GET /videos/search?query=
 
 Возвращает:
 
 * поиск по title + description
-* ranking (relevance score)
+* ranking (relevance score) ##################
 
 ---
 
@@ -295,6 +292,12 @@
 * ordered by views
 
 ---
+
+
+
+########################################################################
+
+
 
 ### 26. GET /videos/top
 

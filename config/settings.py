@@ -18,6 +18,16 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+AUTH_USER_MODEL = 'app.User'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
+
+
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -28,6 +38,7 @@ INSTALLED_APPS = [
     'app',
     'rest_framework',
     'drf_yasg',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
